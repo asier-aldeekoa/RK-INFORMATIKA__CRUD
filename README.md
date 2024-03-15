@@ -8,15 +8,15 @@
 > 15/03/2023
 >
 >> Jornada 1 
->>> Jornada 1
+>>> A la mañana lo que he hecho
 > 
->> Jornada 1
->>> Jornada 1
+>> Jornada 2
+>>> A la tarde lo que he hecho
 
 > 18/03/2023
 >
 >> Jornada 1
->>> Jornada 1
+>>> A la mañana lo que he hecho
 >
->> Jornada 1
->>> Jornada 1
+>> Jornada 2
+>>> A la tarde lo que he hecho
