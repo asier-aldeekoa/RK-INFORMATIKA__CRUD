@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="180aa4de-9f99-4512-8fa2-67f36c6a4fdb" name="Changes" comment="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Css/Registro.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Css/Registro.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Js/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Js/Script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Registro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710516620003</updated>
-      <workItem from="1710516623566" duration="1847000" />
+      <workItem from="1710516623566" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil">
       <option name="closed" value="true" />
