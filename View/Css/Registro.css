@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.error-message1 {
+  color: red;
+  margin-top: 10px;
+  position: absolute;
+  align-items: center;
+  top: 63%; /* Cambiado de bottom: 0; */
+  left: 42.25%;
+  right: 0;
+  z-index: 1; /* Añadido para asegurar que el mensaje de error se muestre por encima de otros elementos */
+}
+.error-message2 {
+  color: red;
+  margin-top: 10px;
+  position: absolute;
+  align-items: center;
+  top: 63%; /* Cambiado de bottom: 0; */
+  left: 42.95%;
+  right: 0;
+  z-index: 1; /* Añadido para asegurar que el mensaje de error se muestre por encima de otros elementos */
+}
+.error-message3 {
+  color: red;
+  margin-top: 10px;
+  position: absolute;
+  top: 63%; /* Cambiado de bottom: 0; */
+  left: 41.95%;
+  right: 0;
+  z-index: 1; /* Añadido para asegurar que el mensaje de error se muestre por encima de otros elementos */
+}
+.register-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  position: relative;
+  margin-bottom: -50px; /* ajusta el margen inferior para el mensaje de error */
+}
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fa7561;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.register-form button:hover {
+  background-color: #dd61fa;
+}
