@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180aa4de-9f99-4512-8fa2-67f36c6a4fdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="180aa4de-9f99-4512-8fa2-67f36c6a4fdb" name="Changes" comment="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Js/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Js/Script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +28,19 @@
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2djLcPq5wKi1Ef1ISfCfyW5MLbu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowGit.ShowToolbar": "false",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,11 +65,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710516620003</updated>
-      <workItem from="1710516623566" duration="1275000" />
+      <workItem from="1710516623566" duration="1847000" />
     </task>
+    <task id="LOCAL-00001" summary="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil">
+      <option name="closed" value="true" />
+      <created>1710518129772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710518129772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mas cambios&#10;&#10;Al final lo voy a hacer de la forma de cada archivo HTML en un archivo PHP, que asi es mucho nas facil" />
   </component>
 </project>
