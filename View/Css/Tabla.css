@@ -15,7 +15,7 @@
 }
 .styled-table th,
 .styled-table td {
-  text-align: center !important; /* Añade !important para asegurar la prioridad */
+  text-align: center !important;
   padding: 12px;
   border-bottom: 1px solid #ddd;
 }
@@ -52,11 +52,4 @@ button {
 }
 button:hover {
   background-color: green;
-}
-.mensaje-error {
-  color: red;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
