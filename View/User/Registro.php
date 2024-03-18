@@ -1,28 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<title>Registro</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Formulario de Registro</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-		<link rel="icon" type="image/x-icon" href="../Public/Images/Logo.jpg">
 		<link rel="stylesheet" href="../Css/Registro.css">
 	</head>
 	<body>
-		<div class="container">
-			<h1>Formulario de Registro</h1>
-			<form>
-				<div class="mb-3">
-					<label for="usuario" class="form-label">Usuario</label>
-					<input type="text" class="form-control" id="usuario" name="usuario">
+		<div id="contenedor">
+			<div id="contenedorcentrado">
+				<div id="registro">
+					<form id="registroform" action="../Controller/User/UserController.php" method="post">
+						<label for="nombre">Usuario</label>
+						<input id="nombre" type="text" name="usuario" placeholder="Usuario" required>
+						<label for="password">Contraseña</label>
+						<input id="password" type="password" placeholder="Contraseña" name="password" required>
+						<button type="submit" title="Registrarse" name="Registrarse">Registrarse</button>
+					</form>
 				</div>
-				<div class="mb-3">
-					<label for="contrasena" class="form-label">Contraseña</label>
-					<input type="password" class="form-control" id="contrasena" name="contrasena">
+				<div id="izquierdo">
+					<hr>
+					<div class="titulo">Registro</div>
+					<hr>
 				</div>
-				<button type="submit" class="btn btn-primary">Registrarse</button>
-			</form>
+			</div>
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
-</html>s
+</html>

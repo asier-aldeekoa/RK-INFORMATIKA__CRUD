@@ -1,26 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 	<head>
-		<title>Login</title>
-		<link rel="stylesheet" href="../View/Css/Index.css">
-		<link rel="icon" type="image/x-icon" href="../Public/Images/Logo.jpg">
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<title> Formulario de Acceso </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../View/Css/Login.css">
 	</head>
 	<body>
-		<div class="login-container">
-			<h2>Login</h2>
-			<form class="login-form" action="../Controller/User/UserController.php" method="POST">
-				<label>
-					<input type="text" name="username" placeholder="Username">
-				</label>
-				<label>
-					<input type="password" name="password" placeholder="Password">
-				</label>
-				<div class="button-container">
-					<button type="submit" name="LogIn">Log in</button>
-					<button type="submit" name="Register">Register</button>
+		<div id="contenedor">
+			<div id="contenedorcentrado">
+				<div id="login">
+					<form id="loginform" action="../Controller/User/UserController.php" method="post">
+						<label for="usuario">Usuario</label>
+						<input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+						<label for="password">Contraseña</label>
+						<input id="password" type="password" placeholder="Contraseña" name="password" required>
+						<button type="submit" title="Ingresar" name="Ingresar">Login</button>
+					</form>
+					<form action="../Controller/User/UserController.php" method="post">
+						<button type="submit" name="Registro">¿No tienes Cuenta? Registrate</button>
+					</form>
 				</div>
-			</form>
+				<div id="derecho">
+					<hr>
+					<div class="titulo">Login</div>
+					<hr>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
