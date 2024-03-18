@@ -2,9 +2,10 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Registro</title>
+		<title> R E G I S T R O </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../Css/Registro.css">
+		<link rel="icon" type="image/x-icon" href="../Public/Images/Logo.jpg">
 	</head>
 	<body>
 		<div id="contenedor">
