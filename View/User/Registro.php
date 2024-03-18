@@ -24,7 +24,7 @@
 				</div>
 				<div id="izquierdo">
 					<hr>
-					<div class="titulo">Registro</div>
+					<div class="titulo">R E G I S T R O</div>
 					<hr>
 				</div>
 			</div>
