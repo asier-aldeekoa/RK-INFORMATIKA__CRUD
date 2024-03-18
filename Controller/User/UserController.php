@@ -1,14 +1,26 @@
 <?php
+session_start();
 
 include_once '../Model/Database/Database.php';
 include_once '../Model/contactModel.php';
 include_once "../View/User/Registro.php";
 include_once "../View/User/Login.php";
 
-error_reporting(E_ALL);
+
 ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if (isset($_POST['Registro'])) {
-    header("Location: http://$_SERVER[HTTP_HOST]/View/User/Registro.php");
+    header("Location: ../../View/User/Registro.php");
     exit();
+}
+
+if (isset($_POST['Ingresar'])) {
+    echo"Usuario Logueado";
+    exit();
+}
+
+if (isset($_POST["Registrarse"])) {
+    echo "Usuario Registrado";
 }

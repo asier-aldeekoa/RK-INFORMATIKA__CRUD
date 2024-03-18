@@ -11,12 +11,15 @@
 		<div id="contenedor">
 			<div id="contenedorcentrado">
 				<div id="registro">
-					<form id="registroform" action="../Controller/User/UserController.php" method="post">
+					<form id="registroform" action="../../Controller/User/UserController.php" method="post">
 						<label for="nombre">Usuario</label>
-						<input id="nombre" type="text" name="usuario" placeholder="Usuario" required>
+						<input id="nombre" type="text" name="usuario" placeholder="Usuario">
 						<label for="password">Contraseña</label>
-						<input id="password" type="password" placeholder="Contraseña" name="password" required>
+						<input id="password" type="password" placeholder="Contraseña" name="password">
 						<button type="submit" title="Registrarse" name="Registrarse">Registrarse</button>
+					</form>
+					<form id="registroform" action="../../index.php" method="post">
+						<button type="submit" title="Volver" name="Volver"><-- Volver</button>
 					</form>
 				</div>
 				<div id="izquierdo">

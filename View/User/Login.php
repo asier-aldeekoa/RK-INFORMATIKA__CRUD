@@ -11,11 +11,11 @@
 		<div id="contenedor">
 			<div id="contenedorcentrado">
 				<div id="login">
-					<form id="loginform" action="../Controller/User/UserController.php" method="post">
+					<form id="loginform" action="../../Controller/User/UserController.php" method="post">
 						<label for="usuario">Usuario</label>
-						<input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+						<input id="usuario" type="text" name="usuario" placeholder="Usuario">
 						<label for="password">Contraseña</label>
-						<input id="password" type="password" placeholder="Contraseña" name="password" required>
+						<input id="password" type="password" placeholder="Contraseña" name="password">
 						<button type="submit" title="Ingresar" name="Ingresar">Login</button>
 					</form>
 					<form action="../Controller/User/UserController.php" method="post">
