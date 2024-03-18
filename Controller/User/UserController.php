@@ -18,6 +18,7 @@ if (isset($_POST['Registro'])) {
 
 if (isset($_POST['Ingresar'])) {
     echo"Usuario Logueado";
+    header("Location: ../../View/Contact/Select.php");
     exit();
 }
 
