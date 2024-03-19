@@ -27,4 +27,28 @@
 >>> A la mañana lo que he hecho, ha sido hacer que me funcione el login. Que ya porfin funciona, y luego despues hacer el login estoy haciendo que si no tienes ningun contacto añadido te lleve a la tabla de añadir contacto
 >
 >> Jornada 2
->>> A la tarde lo que he hecho
+>>> A la tarde lo que he hecho ha sido hacer que el usuario pueda registrarse. Pero si el usuario ya esta registrado que salga un mensaje de error de que el usuario ya existe. Pero necesito hacer que el mensaje salga a otra forma porque lo saco con un ECHO y un H3 y tengo que tener PHP por un lado y HTML por otro.
+
+> 20/03/2023
+>
+>> Jornada 1
+>>> A la mañana lo que he hecho, 
+>
+>> Jornada 2
+>>> A la tarde lo que he hecho, 
+
+> 21/03/2023
+>
+>> Jornada 1
+>>> A la mañana lo que he hecho, 
+>
+>> Jornada 2
+>>> A la tarde lo que he hecho, 
+
+> 22/03/2023
+>
+>> Jornada 1
+>>> A la mañana lo que he hecho, 
+>
+>> Jornada 2
+>>> A la tarde lo que he hecho, 
