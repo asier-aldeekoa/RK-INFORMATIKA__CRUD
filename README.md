@@ -20,3 +20,11 @@
 >
 >> Jornada 2
 >>> A la tarde lo que hecho ha sido intentar seguir con el Login y Registro, pero no he conseguido hacer nada,porque cuando yo le daba a los botones me daba error. Y al final lo que he hecho ha sido quitar todo y dejar todo como al principio y cuando le de al boton que salga un "echo" asi compruebo si el boton funciona
+
+> 19/03/2023
+>
+>> Jornada 1
+>>> A la mañana lo que he hecho, ha sido hacer que me funcione el login. Que ya porfin funciona, y luego despues hacer el login estoy haciendo que si no tienes ningun contacto añadido te lleve a la tabla de añadir contacto
+>
+>> Jornada 2
+>>> A la tarde lo que he hecho
