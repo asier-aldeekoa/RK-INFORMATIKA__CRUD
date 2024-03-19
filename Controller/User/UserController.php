@@ -27,6 +27,24 @@ if (isset($_POST['Registro'])) {
     header("Location: ../../View/User/Registro.php");
     exit();
 }
+
 if (isset($_POST["Registrarse"])) {
-    echo "Usuario Registrado";
+    if (empty($_POST["usuario"]) || empty($_POST["password"])) {
+        // Campos vacíos, muestra un mensaje de error
+        echo '<h4 class="error-message1">¡Completa los campos!</h4>';
+    } else {
+        try {
+            // Comprobar si el usuario ya existe
+            if ($modeloUsuario->usuarioExiste($_POST["usuario"])) {
+                echo '<h4 class="error-message2">¡El usuario ya existe!</h4>';
+            } else {
+                $modeloUsuario->Alta($_POST["usuario"], $_POST["password"]);
+                // Establece la sesión para el nuevo usuario registrado
+                $_SESSION['idUser'] = $modeloUsuario->getLastInsertedUserId();
+                echo '<h4 style="color: green;">Erabiltzailea sartu da</h4>';
+            }
+        } catch (Exception $ex) {
+            echo '<h4 class="error-message3">Error durante el registro</h4>';
+        }
+    }
 }

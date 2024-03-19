@@ -5,7 +5,7 @@
 		<title> R E G I S T R O </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../Css/Registro.css">
-		<link rel="icon" type="image/x-icon" href="../Public/Images/Logo.jpg">
+		<link rel="icon" type="image/x-icon" href="../Public/Images/favicon.ico">
 	</head>
 	<body>
 		<div id="contenedor">
