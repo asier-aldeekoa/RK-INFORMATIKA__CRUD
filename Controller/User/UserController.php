@@ -1,27 +1,33 @@
 <?php
 session_start();
 
-include_once '../Model/Database/Database.php';
-include_once '../Model/contactModel.php';
-include_once "../View/User/Registro.php";
-include_once "../View/User/Login.php";
-
+include_once '../../Model/User/User.php';
 
 ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+$modeloUsuario = new UsuarioModelo();
+$modeloUsuario->konektatu();
+
+if (isset($_POST['Ingresar'])) {
+    $userId = $modeloUsuario->balioztatzea($_POST['usuario'], $_POST['password']);
+    if ($userId !== null) {
+        $_SESSION['idUser'] = $userId;
+        if (isset($_SESSION['idUser'])) {
+            echo"User LOGEADO";
+            
+        }
+    } else {
+        echo "Saiatu berriro, erabiltzailea edo pasahitza ez dituzu ondo sartu.";
+        header("Location: ../../index.php");
+        exit();
+    }
+}
 
 if (isset($_POST['Registro'])) {
     header("Location: ../../View/User/Registro.php");
     exit();
 }
-
-if (isset($_POST['Ingresar'])) {
-    echo"Usuario Logueado";
-    header("Location: ../../View/Contact/Select.php");
-    exit();
-}
-
 if (isset($_POST["Registrarse"])) {
     echo "Usuario Registrado";
 }

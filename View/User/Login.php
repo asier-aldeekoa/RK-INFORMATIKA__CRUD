@@ -25,7 +25,7 @@
 				<div id="derecho">
 					<hr>
 						<div class="titulo">L O G I N</div>
-						<figcaption>Esta es una imagen de ejemplo con una leyenda en itálica y centrada.</figcaption>
+						<figcaption>Logueate porfavor</figcaption>
 					<hr>
 				</div>
 			</div>
