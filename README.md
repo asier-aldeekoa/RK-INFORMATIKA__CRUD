@@ -49,5 +49,6 @@
 
 
 
-Jornada 1.⋅⋅
-A la mañana lo que he hecho
+This is the first paragraph.
+
+And this is the second one.
