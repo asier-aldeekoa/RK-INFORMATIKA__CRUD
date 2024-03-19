@@ -15,11 +15,10 @@ if (isset($_POST['Ingresar'])) {
         $_SESSION['idUser'] = $userId;
         if (isset($_SESSION['idUser'])) {
             echo"User LOGEADO";
-            
+            header("Location: ../../View/Contact/Añadir.php");
         }
     } else {
         echo "Saiatu berriro, erabiltzailea edo pasahitza ez dituzu ondo sartu.";
-        header("Location: ../../index.php");
         exit();
     }
 }

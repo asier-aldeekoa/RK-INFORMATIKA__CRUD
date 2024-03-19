@@ -11,22 +11,22 @@
 <body>
     <div class="container">
         <h1>Formulario de Añadir Contacto</h1>
-        <form action="procesar_contacto.php" method="POST" id="contactoForm">
+        <form action="../../Controller/Contact/ContactController.php" method="POST" id="contactoForm">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <input type="text" class="form-control" id="nombre" name="nombre">
             </div>
             <div class="mb-3">
                 <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" name="correo" required>
+                <input type="email" class="form-control" id="correo" name="correo">
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Número de Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" title="Por favor, ingrese solo números de 9 dígitos" required>
+                <input type="tel" class="form-control" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" title="Por favor, ingrese solo números de 9 dígitos">
             </div>
             <button type="submit" class="btn btn-primary">Añadir Contacto</button>
         </form>
