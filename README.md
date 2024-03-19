@@ -46,9 +46,3 @@
 >
 >> Jornada 2
 >>> A la tarde lo que he hecho, 
-
-
-
-This is the first paragraph.
-
-And this is the second one.
