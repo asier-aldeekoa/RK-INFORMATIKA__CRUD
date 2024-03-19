@@ -47,8 +47,7 @@
 >> Jornada 2
 >>> A la tarde lo que he hecho, 
 
-> Lo que me falta
->
->> - [ ] Checkbox 1
->> - [x] Checkbox 2
->> - [ ] Checkbox 1
+
+
+Jornada 1.⋅⋅
+A la mañana lo que he hecho
