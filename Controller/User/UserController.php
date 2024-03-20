@@ -14,7 +14,6 @@ if (isset($_POST['Ingresar'])) {
     if ($userId !== null) {
         $_SESSION['idUser'] = $userId;
         if (isset($_SESSION['idUser'])) {
-            echo"User LOGEADO";
             header("Location: ../../View/Contact/Select.php");
         }
     } else {

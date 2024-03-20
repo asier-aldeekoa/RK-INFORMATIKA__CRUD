@@ -7,7 +7,6 @@ include '../../Model/Database/ConnectBD.php';
 session_start();
 
 if (isset($_SESSION["idUser"])) {
-    echo "Tu Id de Usuario es " . $_SESSION["idUser"];
     $idUser = $_SESSION["idUser"];
 
     class Contacto {
