@@ -26,7 +26,7 @@
 > 20/03/2023
 >
 >> Jornada 1
->>> A la mañana lo que he hecho, 
+>>> A la mañana lo que he hecho, ha sido comprobar si el login y el registro funcionaba bien. Y despues de comprobar eso he empezado a hacer la tabla del fichero SELECT. donde cuando te logues te muestre una tabla con los contactos que estan vinculados a ese usuario. Y luego en la tabla he añadido que puedas `Ver mas INFORMACION del contacto`, `Actualizar la INFORMACION del contacto` y `Poder borrar el contacto`. 
 >
 >> Jornada 2
 >>> A la tarde lo que he hecho, 
