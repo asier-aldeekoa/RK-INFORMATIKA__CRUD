@@ -1,5 +1,17 @@
 <!-- Formulario De Añadir Contacto -->
 
+
+<?php
+session_start(); // Asegúrate de iniciar la sesión en todas las páginas donde necesites acceder a la sesión
+
+// Comprueba si la variable de sesión está definida antes de usarla para evitar errores
+if (isset($_SESSION["idUser"])) {
+    echo "Tu Id de Usuario es " . $_SESSION["idUser"];
+} else {
+    echo "No has iniciado sesión";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
