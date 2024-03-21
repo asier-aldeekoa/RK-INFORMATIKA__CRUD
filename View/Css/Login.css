@@ -60,6 +60,9 @@ body {
 
     margin-top: 15px;
 }
+input::placeholder {
+    text-align: center;
+  }
 #login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;

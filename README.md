@@ -29,7 +29,7 @@
 >>> A la mañana lo que he hecho, ha sido comprobar si el login y el registro funcionaba bien. Y despues de comprobar eso he empezado a hacer la tabla del fichero SELECT. donde cuando te logues te muestre una tabla con los contactos que estan vinculados a ese usuario. Y luego en la tabla he añadido que puedas `Ver mas INFORMACION del contacto`, `Actualizar la INFORMACION del contacto` y `Poder borrar el contacto`. 
 >
 >> Jornada 2
->>> A la tarde lo que he hecho, ha sido seguir con el boton de `AÑADIR CONTACTO`, porque lo que queremos es que los mensajes salgan en modo PHP u HTML. Porque lo que a mi me pasaba era que me salian los mensaje a modo de `echo <h4 style="color: green;">Erabiltzailea sartu da</h4>` y tendria que salir solo de una forma. Y despues tambien he hecho un boton de `LOG OUT` que es para cuando quieras cerrar la sesion de ese Usuario y quieras entrar con otra
+>>> A la tarde lo que he hecho, ha sido seguir con el boton de `AÑADIR CONTACTO`, porque lo que queremos es que los mensajes salgan en modo PHP u HTML. Porque lo que a mi me pasaba era que me salian los mensaje a modo de `echo <h4 style="color: green;">Erabiltzailea sartu da<1/h4>` y tendria que salir solo de una forma. Y despues tambien he hecho un boton de `LOG OUT` que es para cuando quieras cerrar la sesion de ese Usuario y quieras entrar con otra
 
 > 21/03/2023
 >
