@@ -6,7 +6,10 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 class UsuarioModelo{
     private $mysqli;
-    /* Conexion a la Base De Datos */
+/**
+ * Con esta funcion lo que hacemos es poder conectarnos a la Base De Datos
+ * Aqui no salen ni el "Nombre Del Host","Nombre De Usuario","Nombre De Base De Datos" y "Contraseña" porque estan definidos en otro fichero
+ */
     public function konektatu(){
         try {
             $this->mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -17,6 +20,10 @@ class UsuarioModelo{
             echo $e->getMessage();
         }
     }
+/**
+ * Con esta funcion lo que hacemos es poder comprobar el Login
+ * Lo que hacemos es buscar si el usuario que hemos metido existe en la base de datos y luego si la contraseña que hemos metido despues de deshashear si es igual que la que hemos puesto
+ */
     public function balioztatzea($user, $pass ) {
         $sql = "SELECT * FROM users WHERE username = ?";
         $consultaprep = $this->mysqli->prepare($sql);
@@ -35,6 +42,10 @@ class UsuarioModelo{
             return null; // Cambiado de FALSE a NULL
         }
     }
+/**
+ * Con esta funcion lo que hacemos es poder comprobar es el Registro
+ * Aqui lo que hacemos es meter un usuario y contraseña y ello lo que hace es añadirlo a la base de datos HASHEANDO la contaseña
+ */
     public function Alta($Erabiltzailea, $Pasahitza) {
         try {
             $this->konektatu();
@@ -53,7 +64,11 @@ class UsuarioModelo{
             throw $ex;
         }
     }
-    /* Comprobar si el Usuario ya existe */
+/**
+ * Con esta funcion lo que hacemos es poder comprobar si el usuario que hemos añadido en el Registro existe
+ * Esto lo que hace es antes de que el usuario se añada a la BD mira si existe uno con el mismo nombre de usuario
+ * Y si ya existe no te deja añadirlo a la Base de Datos
+ */
     public function usuarioExiste($username) {
         $stmt = $this->mysqli->prepare("SELECT idUser FROM users WHERE username = ?");
         // Cambié "usuario" por "username" en la consulta preparada
@@ -67,8 +82,10 @@ class UsuarioModelo{
     public function getMysqli() {
         return $this->mysqli;
     }
+/**
+ * Con esta funcion lo que hacemos es comprobar cual es la ultima idUser que esta en la BD antes de añadir
+ */
     public function getLastInsertedUserId() {
-        // Asumiendo que $mysqli es tu conexión a la base de datos
         return mysqli_insert_id($this->getMysqli());
     }
 }

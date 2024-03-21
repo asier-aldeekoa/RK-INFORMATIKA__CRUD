@@ -1,6 +1,7 @@
-<?php include '../../Model/Contact/contactos.php';
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+<?php 
+    include '../../Model/Contact/contactos.php';
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ error_reporting(E_ALL);
             <div class="row justify-content-between">
                 <div class="col-auto">
                     <form action="../../Controller/Contact/ContactController.php" method="post">
-                        <button type="submit" class="btn btn-danger" name=" ">LogOut</button>
+                        <button type="submit" class="btn btn-danger" name="logout">LogOut</button>
                     </form>
                 </div>
                 <div class="col-auto">
@@ -56,7 +57,8 @@ error_reporting(E_ALL);
                         <td class="col-auto"><button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#selectModal<?= $contacto->idContacto; ?>"><span class="fa fa-user-circle"></span></button></td>
                         <td class="col-auto"><button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal<?= $contacto->idContacto; ?>"><span class="fa fa-pencil"></span></button></td>
                         <td class="col-auto"><button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal<?= $contacto->idContacto; ?>"><span class="fa fa-trash"></span></button></td>
-                    </tr>    
+                    </tr>
+                    <?php include 'Modal.php'; ?> <!-- Aquí se incluye el modal -->
                 <?php endforeach; ?>
             </tbody>
         </table>
