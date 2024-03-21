@@ -35,7 +35,7 @@
                     <label for="telefono" class="form-label">Número de Teléfono</label>
                     <input type="tel" class="form-control" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" placeholder="Número de Teléfono">
                 </div>
-                <center><button type="submit" class="btn btn-primary">Añadir Contacto</button></center>
+                <center><button type="submit" name="AñadirC" class="btn btn-primary">Añadir Contacto</button></center>
             </form>
         </div>
     </div>
