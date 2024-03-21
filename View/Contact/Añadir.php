@@ -21,19 +21,19 @@
             <form action="../../Controller/Contact/ContactController.php" method="POST" id="contactoForm">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre">
                 </div>
                 <div class="mb-3">
                     <label for="apellidos" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+                    <input type="text" class="form-control" id="apellidos" name="Apellido" placeholder="Apellidos">
                 </div>
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
+                    <input type="email" class="form-control" id="correo" name="CorreoElectronico" placeholder="Correo Electrónico">
                 </div>
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Número de Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" placeholder="Número de Teléfono">
+                    <input type="tel" class="form-control" id="telefono" name="NumeroDeTelefono" maxlength="9" pattern="[0-9]{9}" placeholder="Número de Teléfono">
                 </div>
                 <center><button type="submit" name="AñadirC" class="btn btn-primary">Añadir Contacto</button></center>
             </form>
