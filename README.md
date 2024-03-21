@@ -37,7 +37,7 @@
 >>> A la mañana lo que he hecho, ha sido hacer los modals que salen en la tabla del Select que son los de `Ver Detalles del Contacto`,`Actualizar Información del Contacto`,`Confirmar Borrado del Contacto` y despues de eso lo que he echo ha sido dejar bien configurado / hecho el modal de `Ver Detalles del Contacto` y porque antes cuando entrabas a ver la informacion del usuario en todos los modals te salia la misma informacion de los Usuarios y eso ya lo he cambiado y actualizado. Ahora te sale bien la informacion de cada uno
 >
 >> Jornada 2
->>> A la tarde lo que he hecho, 
+>>> A la tarde lo que he hecho, ha sido hacer el borrarContacto y intentar hacer el AÑADIR y ACTUALIZAR pero por varios problemas no se ha podido hacer. Ya tengo preparado todo para hacerlo mañana, tengo mas o menos el codigo pensado de como hacerlo. Y tendre que mirar que me salga bien con el tema de las variables publicas, pq es lo importante de este proyecto.`Si lo acabo mañana listo hasta dentro de 2 semanas :)`
 
 > 22/03/2023
 >
