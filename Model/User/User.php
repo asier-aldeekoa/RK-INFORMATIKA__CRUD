@@ -8,7 +8,7 @@ class UsuarioModelo{
     private $mysqli;
 /**
  * Con esta funcion lo que hacemos es poder conectarnos a la Base De Datos
- * Aqui no salen ni el "Nombre Del Host","Nombre De Usuario","Nombre De Base De Datos" y "Contraseña" porque estan definidos en otro fichero
+ * Aqui  salen ni el "Nombre Del Host","Nombre De Usuario","Nombre De Base De Datos" y "Contraseña" porque estan definidos en otro fichero
  */
     public function konektatu(){
         try {
@@ -39,7 +39,7 @@ class UsuarioModelo{
                 return null;
             }
         } else {
-            return null; // Cambiado de FALSE a NULL
+            return null;
         }
     }
 /**

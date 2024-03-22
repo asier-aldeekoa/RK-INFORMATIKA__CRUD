@@ -8,7 +8,6 @@ session_start(); // Inicia la sesión si no está iniciada
         <meta charset="utf-8">
         <title> L O G I N </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Css/Login.css">
         <link rel="stylesheet" href="../../View/Css/Login.css">
         <link rel="icon" type="image/x-icon" href="../../Public/Images/favicon.ico">
     </head>

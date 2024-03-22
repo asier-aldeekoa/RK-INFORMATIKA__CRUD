@@ -28,15 +28,18 @@ if (isset($_POST['Registro'])) {
 
 if (isset($_POST["Registrarse"])) {
     if (empty($_POST["usuario"]) || empty($_POST["password"])) {
-        echo '¡Completa los campos!';
+        $_SESSION['error_message'] = "¡Completa los campos!";
+        header("Location: ../../View/User/Registro.php");
     } else {
         try {
             if ($modeloUsuario->usuarioExiste($_POST["usuario"])) {
-                echo '¡El usuario ya existe!';
+                $_SESSION['error_message'] = "¡El usuario ya existe!";
+                header("Location: ../../View/User/Registro.php");
             } else {
                 $modeloUsuario->Alta($_POST["usuario"], $_POST["password"]);
                 $_SESSION['idUser'] = $modeloUsuario->getLastInsertedUserId();
-                echo 'Erabiltzailea sartu da';
+                $_SESSION['error_message'] = "Erabiltzailea sartu da";
+                header("Location: ../../View/Contact/Select.php");
             }
         } catch (Exception $ex) {
             echo 'Error durante el registro';

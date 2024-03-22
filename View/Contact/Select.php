@@ -28,27 +28,18 @@
                 </div>
                 <div class="col-auto">
                     <div class="text-center">
-                        <?php if(isset($_SESSION['delete_message'])): ?>
-                            <div class="delete-message"><?php echo $_SESSION['delete_message']; ?></div>
-                        <?php unset($_SESSION['delete_message']);?>
+                        <?php if(isset($_SESSION['error_message'])): ?>
+                            <div class="error-message"><?php echo $_SESSION['error_message']; ?></div>
+                        <?php unset($_SESSION['error_message']);?>
                         <?php endif; ?>
                         <?php
-                        if (isset($delete_message)) {
-                            echo '<div class="delete-message">' . $delete_message . '</div>';
+                        if (isset($error_message)) {
+                            echo '<div class="error-message">' . $error_message . '</div>';
                         }
                         ?>
                     </div>
-                    <div class="text-center">
-                        <?php if(isset($_SESSION['select_message'])): ?>
-                            <div class="select-message"><?php echo $_SESSION['select_message']; ?></div>
-                        <?php unset($_SESSION['select_message']);?>
-                        <?php endif; ?>
-                        <?php
-                        if (isset($select_message)) {
-                            echo '<div class="select-message">' . $select_message . '</div>';
-                        }
-                        ?>
-                    </div>
+
+
                 </div>
                 <div class="col-auto">
                     <form action="../../Controller/Contact/ContactController.php" method="post">

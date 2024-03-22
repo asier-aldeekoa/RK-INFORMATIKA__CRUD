@@ -36,7 +36,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['AñadirC'])) {
     $NumeroDeTelefono = $_POST['NumeroDeTelefono'];
     $idUser = $_SESSION['idUser'];
     
-    $ContactoModelo->insertarContacto($Nombre, $Apellido, $CorreoElectronico, $NumeroDeTelefono, $idUser);
+    $resultado = $ContactoModelo->insertarContacto($Nombre, $Apellido, $CorreoElectronico, $NumeroDeTelefono, $idUser);
+
+    if($resultado) {
+        $_SESSION['error_message'] = "Contacto añadido correctamente.";
+        header("Location: ../../View/Contact/Select.php");
+    }
+}
+/*
+ *
+ */
+if(isset($_POST['actualizarContacto'])) {
+    $idContacto = $_POST['idContacto1'];
+    $nombre = $_POST['nombre'];
+    $apellidos = $_POST['apellidos'];
+    $telefono = $_POST['telefono'];
+    $correo = $_POST['correo'];
+    
+    // Suponiendo que tienes una instancia de $modeloContact previamente creada
+    
+    $resultado = $ContactoModelo->actualizarContacto($idContacto, $nombre, $apellidos, $telefono, $correo);
+    
+    if($resultado) {
+        $_SESSION['error_message'] = "Contacto actualizado correctamente.";
+        header("Location: ../../View/Contact/Select.php");
+    }
 }
 /**
  * Con esto lo que hacemos es que el contacto seleccionado se Borre
@@ -46,7 +70,7 @@ if(isset($_POST['idContacto'])) {
     $resultado = $ContactoModelo->borrarContacto($idContacto);
     
     if($resultado) {
-        $_SESSION['delete_message'] = "Contacto borrado correctamente.";
+        $_SESSION['error_message'] = "Contacto borrado correctamente.";
         header("Location: ../../View/Contact/Select.php"); // Redirige al usuario de vuelta a la página de inicio de sesión
     } else {
         echo 'Error al borrar el contacto.';

@@ -35,19 +35,27 @@ class ContactoModelo{
 
         $stmt->bind_param("ssssi", $Nombre, $Apellido, $NumeroDeTelefono, $CorreoElectronico, $idUser);
 
-        if ($stmt->execute()) {
-            echo "Contacto añadido correctamente.";
+        if($stmt->execute()) {
+            return true;
         } else {
-            echo "Error al añadir el contacto: " . $stmt->error;
+            return false;
         }
-
-        $stmt->close();
     }
     /**
      * Con esta funcion lo que hacemos es borrar el contacto SELECCIONADO
      * Lo que hacemos es cuando tenemos los contactos y le damos al boton de borrar le cojemos el idContacto que tiene asignado. Y despues de eso, si le das a la opcion de borrar te lo borra de la Base De Datos
      */
-
+        public function actualizarContacto($idContacto, $nombre, $apellidos, $telefono, $correo) {
+        $sql = "UPDATE contactos SET Nombre = ?, Apellido = ?, NumeroDeTelefono = ?, CorreoElectronico = ? WHERE idContacto = ?";
+        $stmt = $this->mysqli->prepare($sql);
+        $stmt->bind_param("ssssi", $nombre, $apellidos, $telefono, $correo, $idContacto);
+        
+        if($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     /**
      * Con esta funcion lo que hacemos es borrar el contacto SELECCIONADO
      * Lo que hacemos es cuando tenemos los contactos y le damos al boton de borrar le cojemos el idContacto que tiene asignado. Y despues de eso, si le das a la opcion de borrar te lo borra de la Base De Datos
