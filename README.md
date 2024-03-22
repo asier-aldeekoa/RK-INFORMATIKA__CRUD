@@ -42,7 +42,7 @@
 > 22/03/2023
 >
 >> Jornada 1
->>> A la mañana lo que he hecho, 
+>>> A la mañana lo que he hecho, ha sido intentar hacer el ACTUALIZAR pero por varios errores no lo he conseguido hacer, luego tambien he hecho que los errores se guarden en una SESSION y luego salgan en el HTML, asi solo uso PHP en vez de HTML y PHP juntos.
 >
 >> Jornada 2
->>> A la tarde lo que he hecho, 
+>>> A la tarde lo que he hecho, ha sido hacer el ACTUALIZAR contacto y acabar el tema de los errores, que habia algunos que no funcionaban como debian
