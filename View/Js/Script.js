@@ -11,13 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var apellidos = apellidosInput.value.trim().replace(/\s+/g, ''); // Eliminar espacios en blanco
         var correo = "";
 
-        // Concatenar nombre y apellidos en el formato deseado para el correo electrónico
         if (nombre && apellidos) {
-            // Eliminar espacios y convertir a minúsculas para el correo electrónico
             correo = (nombre + "." + apellidos).toLowerCase() + "@gmail.com";
         }
 
-        // Actualizar el valor del campo de correo electrónico
         correoInput.value = correo;
     }
 });

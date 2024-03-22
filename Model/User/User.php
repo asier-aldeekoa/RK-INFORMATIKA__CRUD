@@ -71,7 +71,6 @@ class UsuarioModelo{
  */
     public function usuarioExiste($username) {
         $stmt = $this->mysqli->prepare("SELECT idUser FROM users WHERE username = ?");
-        // Cambié "usuario" por "username" en la consulta preparada
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $stmt->store_result();

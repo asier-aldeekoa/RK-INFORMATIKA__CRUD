@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="../../Public/Images/favicon.ico">
     <style>
-        /* Estilo adicional para limitar el ancho del contenedor */
         .custom-container {
-            max-width: 400px; /* Cambia este valor según tu preferencia */
+            max-width: 400px;
         }
     </style>
 </head>
@@ -33,9 +32,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Número de Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" name="NumeroDeTelefono" maxlength="9" pattern="[0-9]{9}" placeholder="Número de Teléfono">w
+                    <input type="tel" class="form-control" id="telefono" name="NumeroDeTelefono" maxlength="9" pattern="[0-9]{9}" placeholder="Número de Teléfono">
                 </div>
-                <center><button type="submit" name="AñadirC" class="btn btn-primary">Añadir Contacto</button></center>
+                <div class="d-flex justify-content-between"> <!-- Utilizamos la clase d-flex y justify-content-between para alinear los botones -->
+                    <button type="submit" name="AñadirC" class="btn btn-primary">Añadir Contacto</button>
+                    <button type="submit" name="Volver" class="btn btn-primary">Volver</button>
+                </div>
             </form>
         </div>
     </div>

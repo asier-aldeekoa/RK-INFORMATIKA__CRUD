@@ -30,7 +30,7 @@ if (isset($_SESSION["idUser"])) {
             $contactos[] = $contacto;
         }
     } else {
-        echo "No se encontraron contactos para este usuario.";
+        $_SESSION['select_message'] = "No se encontraron contactos para este usuario.";
     }
     $conn->close();
 } else {

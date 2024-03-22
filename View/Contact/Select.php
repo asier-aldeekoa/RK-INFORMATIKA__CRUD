@@ -20,11 +20,35 @@
     </head>
     <body>
         <div class="container mt-4 mb-4">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-auto">
                     <form action="../../Controller/Contact/ContactController.php" method="post">
                         <button type="submit" class="btn btn-danger" name="logout">LogOut</button>
                     </form>
+                </div>
+                <div class="col-auto">
+                    <div class="text-center">
+                        <?php if(isset($_SESSION['delete_message'])): ?>
+                            <div class="delete-message"><?php echo $_SESSION['delete_message']; ?></div>
+                        <?php unset($_SESSION['delete_message']);?>
+                        <?php endif; ?>
+                        <?php
+                        if (isset($delete_message)) {
+                            echo '<div class="delete-message">' . $delete_message . '</div>';
+                        }
+                        ?>
+                    </div>
+                    <div class="text-center">
+                        <?php if(isset($_SESSION['select_message'])): ?>
+                            <div class="select-message"><?php echo $_SESSION['select_message']; ?></div>
+                        <?php unset($_SESSION['select_message']);?>
+                        <?php endif; ?>
+                        <?php
+                        if (isset($select_message)) {
+                            echo '<div class="select-message">' . $select_message . '</div>';
+                        }
+                        ?>
+                    </div>
                 </div>
                 <div class="col-auto">
                     <form action="../../Controller/Contact/ContactController.php" method="post">
@@ -33,7 +57,6 @@
                 </div>
             </div>
         </div>
-        
         <table class="styled-table">
             <thead>
                 <tr>
@@ -55,7 +78,7 @@
                         <td class="col-auto"><button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal<?= $contacto->idContacto; ?>"><span class="fa fa-pencil"></span></button></td>
                         <td class="col-auto"><button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal<?= $contacto->idContacto; ?>"><span class="fa fa-trash"></span></button></td>
                     </tr>
-                    <?php include 'Modal.php'; ?> <!-- Aquí se incluye el modal -->
+                    <?php include 'Modal.php'; ?>
                 <?php endforeach; ?>
             </tbody>
         </table>

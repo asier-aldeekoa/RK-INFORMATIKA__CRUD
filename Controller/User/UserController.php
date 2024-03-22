@@ -13,15 +13,14 @@ if (isset($_POST['Ingresar'])) {
     $userId = $modeloUsuario->balioztatzea($_POST['usuario'], $_POST['password']);
     if ($userId !== null) {
         $_SESSION['idUser'] = $userId;
-        if (isset($_SESSION['idUser'])) {
-            header("Location: ../../View/Contact/Select.php");
-        }
+        header("Location: ../../View/Contact/Select.php");
+        exit();
     } else {
-        echo "Saiatu berriro, erabiltzailea edo pasahitza ez dituzu ondo sartu.";
+        $_SESSION['error_message'] = "Saiatu berriro, erabiltzailea edo pasahitza ez dituzu ondo sartu.";
+        header("Location: ../../index.php"); // Redirige al usuario de vuelta a la página de inicio de sesión
         exit();
     }
 }
-
 if (isset($_POST['Registro'])) {
     header("Location: ../../View/User/Registro.php");
     exit();
@@ -29,21 +28,18 @@ if (isset($_POST['Registro'])) {
 
 if (isset($_POST["Registrarse"])) {
     if (empty($_POST["usuario"]) || empty($_POST["password"])) {
-        // Campos vacíos, muestra un mensaje de error
-        echo '<h4 class="error-message1">¡Completa los campos!</h4>';
+        echo '¡Completa los campos!';
     } else {
         try {
-            // Comprobar si el usuario ya existe
             if ($modeloUsuario->usuarioExiste($_POST["usuario"])) {
-                echo '<h4 class="error-message2">¡El usuario ya existe!</h4>';
+                echo '¡El usuario ya existe!';
             } else {
                 $modeloUsuario->Alta($_POST["usuario"], $_POST["password"]);
-                // Establece la sesión para el nuevo usuario registrado
                 $_SESSION['idUser'] = $modeloUsuario->getLastInsertedUserId();
-                echo '<h4 style="color: green;">Erabiltzailea sartu da</h4>';
+                echo 'Erabiltzailea sartu da';
             }
         } catch (Exception $ex) {
-            echo '<h4 class="error-message3">Error durante el registro</h4>';
+            echo 'Error durante el registro';
         }
     }
 }

@@ -15,7 +15,7 @@
   }
   .styled-table th,
   .styled-table td {
-    text-align: center !important; /* Añade !important para asegurar la prioridad */
+    text-align: center !important;
     padding: 12px;
     border-bottom: 1px solid #ddd;
   }
